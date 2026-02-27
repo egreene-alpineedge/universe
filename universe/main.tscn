@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://bfa1c4ogyjtsu"]
+
+[ext_resource type="Script" uid="uid://cio4oprbl7i5n" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bda73liu2akeu" path="res://celestial_body.gd" id="1_ig7tw"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_7dm0k"]
+radius = 1000.0
+height = 2000.0
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_ig7tw"]
+
+[node name="Main" type="Node3D" unique_id=681199823]
+script = ExtResource("1_0xm2m")
+
+[node name="CelestialBody" type="MeshInstance3D" parent="." unique_id=1188423989 groups=["bodies"]]
+mesh = SubResource("SphereMesh_7dm0k")
+script = ExtResource("1_ig7tw")
+mass = 9.999999999999999e+29
+velocity = Vector3(1, 0, 0)
+
+[node name="CelestialBody2" type="MeshInstance3D" parent="." unique_id=805708848 groups=["bodies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10000, 0, 0)
+mesh = SubResource("SphereMesh_7dm0k")
+script = ExtResource("1_ig7tw")
+mass = 2890000000000.0
+velocity = Vector3(1, 0, 0)
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1342616524]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 30000, 0)
+far = 1000000.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1486078614]
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 1500, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=424688616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1001, 0)
+mesh = SubResource("CapsuleMesh_ig7tw")
