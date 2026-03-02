@@ -1,0 +1,19 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://dlvvw64fb6jxo"
+
+[deps]
+
+files=["res://bodies.Radius.translation", "res://bodies.x.translation", "res://bodies.y.translation", "res://bodies.z.translation"]
+
+source_file="res://bodies.csv"
+dest_files=["res://bodies.Radius.translation", "res://bodies.x.translation", "res://bodies.y.translation", "res://bodies.z.translation"]
+
+[params]
+
+compress=1
+delimiter=0
+unescape_keys=false
+unescape_translations=true

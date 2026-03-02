@@ -1,37 +1,628 @@
 [gd_scene format=3 uid="uid://bfa1c4ogyjtsu"]
 
-[ext_resource type="Script" uid="uid://cio4oprbl7i5n" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://bda73liu2akeu" path="res://celestial_body.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://d34gfyg5j31tb" path="res://main2.gd" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://bh7x0eq3gb8pi" path="res://orbital_predictor2.gd" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://dwdm5duslbeiw" path="res://celestial_body2.gd" id="2_lquwl"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_7dm0k"]
-radius = 1000.0
-height = 2000.0
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2yge"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_1bvp3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lquwl"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_7mycd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_272bh"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_5vw27"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kek77"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_4c57u"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1bvp3"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_lquwl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7mycd"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_272bh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5vw27"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_kek77"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4c57u"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_efxa6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dg77c"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ycdy4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w48qg"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_vivmo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2cqfq"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_yaehf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_074og"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_cegan"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_82xsv"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_getpj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ryguw"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_d13ii"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1u8w0"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0odxb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lswn8"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_a6jrf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xuqvo"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_qsp4k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kq58d"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_seu75"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_htxhm"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_jq2sk"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4k2k6"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0rl1p"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ok6jj"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_facbu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b1qrp"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_come4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h8e4i"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_4lmeg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cp0l"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_d2t1y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gngh3"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0n3wm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qnost"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_wnkbs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f6a44"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0cbny"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ig7tw"]
 
+[sub_resource type="SphereMesh" id="SphereMesh_0xm2m"]
+radius = 12000.0
+height = 24000.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_h2yge"]
+radius = 382.5
+height = 765.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_1bvp3"]
+radius = 948.9
+height = 1897.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_lquwl"]
+radius = 1000.0
+height = 2000.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_7mycd"]
+radius = 272.4
+height = 544.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_272bh"]
+radius = 532.5
+height = 1065.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_5vw27"]
+radius = 1.8
+height = 3.6
+
+[sub_resource type="SphereMesh" id="SphereMesh_kek77"]
+radius = 1.0
+height = 2.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_4c57u"]
+radius = 11209.2
+height = 22418.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_efxa6"]
+radius = 413.0
+height = 826.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_dg77c"]
+radius = 377.9
+height = 755.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_ycdy4"]
+radius = 285.6
+height = 571.2
+
+[sub_resource type="SphereMesh" id="SphereMesh_w48qg"]
+radius = 244.7
+height = 489.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_vivmo"]
+radius = 9449.4
+height = 18898.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_2cqfq"]
+radius = 403.7
+height = 807.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_yaehf"]
+radius = 39.5
+height = 79.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_074og"]
+radius = 31.0
+height = 62.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_cegan"]
+radius = 83.3
+height = 166.6
+
+[sub_resource type="SphereMesh" id="SphereMesh_82xsv"]
+radius = 88.0
+height = 176.0
+
+[sub_resource type="SphereMesh" id="SphereMesh_getpj"]
+radius = 119.9
+height = 239.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_ryguw"]
+radius = 4007.4
+height = 8014.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_d13ii"]
+radius = 123.7
+height = 247.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_1u8w0"]
+radius = 119.4
+height = 238.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_0odxb"]
+radius = 91.7
+height = 183.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_lswn8"]
+radius = 90.8
+height = 181.6
+
+[sub_resource type="SphereMesh" id="SphereMesh_a6jrf"]
+radius = 3882.7
+height = 7765.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_xuqvo"]
+radius = 212.2
+height = 424.4
+
+[sub_resource type="SphereMesh" id="SphereMesh_qsp4k"]
+radius = 186.3
+height = 372.6
+
 [node name="Main" type="Node3D" unique_id=681199823]
-script = ExtResource("1_0xm2m")
-
-[node name="CelestialBody" type="MeshInstance3D" parent="." unique_id=1188423989 groups=["bodies"]]
-mesh = SubResource("SphereMesh_7dm0k")
-script = ExtResource("1_ig7tw")
-mass = 9.999999999999999e+29
-velocity = Vector3(1, 0, 0)
-
-[node name="CelestialBody2" type="MeshInstance3D" parent="." unique_id=805708848 groups=["bodies"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10000, 0, 0)
-mesh = SubResource("SphereMesh_7dm0k")
-script = ExtResource("1_ig7tw")
-mass = 2890000000000.0
-velocity = Vector3(1, 0, 0)
+script = ExtResource("1_1bvp3")
 
 [node name="Camera3D" type="Camera3D" parent="." unique_id=1342616524]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 30000, 0)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 23988.367, 99933.53, 0)
 far = 1000000.0
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1486078614]
 transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 1500, 0)
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=424688616]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1001, 0)
+[node name="Orbital Lines" type="Node3D" parent="." unique_id=1730881336]
+script = ExtResource("2_h2yge")
+path_segments = 1228
+
+[node name="@MeshInstance3D@118838" type="MeshInstance3D" parent="Orbital Lines" unique_id=1142613849]
+material_override = SubResource("StandardMaterial3D_h2yge")
+mesh = SubResource("ImmediateMesh_1bvp3")
+
+[node name="@MeshInstance3D@118839" type="MeshInstance3D" parent="Orbital Lines" unique_id=1475889213]
+material_override = SubResource("StandardMaterial3D_lquwl")
+mesh = SubResource("ImmediateMesh_7mycd")
+
+[node name="@MeshInstance3D@118840" type="MeshInstance3D" parent="Orbital Lines" unique_id=1509294754]
+material_override = SubResource("StandardMaterial3D_272bh")
+mesh = SubResource("ImmediateMesh_5vw27")
+
+[node name="@MeshInstance3D@119518" type="MeshInstance3D" parent="Orbital Lines" unique_id=1432302635]
+material_override = SubResource("StandardMaterial3D_kek77")
+mesh = SubResource("ImmediateMesh_4c57u")
+
+[node name="@MeshInstance3D@123617" type="MeshInstance3D" parent="Orbital Lines" unique_id=230215490]
+material_override = SubResource("StandardMaterial3D_1bvp3")
+mesh = SubResource("ImmediateMesh_lquwl")
+
+[node name="@MeshInstance3D@124160" type="MeshInstance3D" parent="Orbital Lines" unique_id=1465375522]
+material_override = SubResource("StandardMaterial3D_7mycd")
+mesh = SubResource("ImmediateMesh_272bh")
+
+[node name="@MeshInstance3D@124647" type="MeshInstance3D" parent="Orbital Lines" unique_id=377677389]
+material_override = SubResource("StandardMaterial3D_5vw27")
+mesh = SubResource("ImmediateMesh_kek77")
+
+[node name="@MeshInstance3D@128258" type="MeshInstance3D" parent="Orbital Lines" unique_id=1605974669]
+material_override = SubResource("StandardMaterial3D_4c57u")
+mesh = SubResource("ImmediateMesh_efxa6")
+
+[node name="@MeshInstance3D@129340" type="MeshInstance3D" parent="Orbital Lines" unique_id=325016133]
+material_override = SubResource("StandardMaterial3D_dg77c")
+mesh = SubResource("ImmediateMesh_ycdy4")
+
+[node name="@MeshInstance3D@129813" type="MeshInstance3D" parent="Orbital Lines" unique_id=120527768]
+material_override = SubResource("StandardMaterial3D_w48qg")
+mesh = SubResource("ImmediateMesh_vivmo")
+
+[node name="@MeshInstance3D@130316" type="MeshInstance3D" parent="Orbital Lines" unique_id=798730774]
+material_override = SubResource("StandardMaterial3D_2cqfq")
+mesh = SubResource("ImmediateMesh_yaehf")
+
+[node name="@MeshInstance3D@148111" type="MeshInstance3D" parent="Orbital Lines" unique_id=1354884427]
+material_override = SubResource("StandardMaterial3D_074og")
+mesh = SubResource("ImmediateMesh_cegan")
+
+[node name="@MeshInstance3D@148640" type="MeshInstance3D" parent="Orbital Lines" unique_id=143075447]
+material_override = SubResource("StandardMaterial3D_82xsv")
+mesh = SubResource("ImmediateMesh_getpj")
+
+[node name="@MeshInstance3D@149182" type="MeshInstance3D" parent="Orbital Lines" unique_id=238371533]
+material_override = SubResource("StandardMaterial3D_ryguw")
+mesh = SubResource("ImmediateMesh_d13ii")
+
+[node name="@MeshInstance3D@149711" type="MeshInstance3D" parent="Orbital Lines" unique_id=1086317805]
+material_override = SubResource("StandardMaterial3D_1u8w0")
+mesh = SubResource("ImmediateMesh_0odxb")
+
+[node name="@MeshInstance3D@151236" type="MeshInstance3D" parent="Orbital Lines" unique_id=1172596394]
+material_override = SubResource("StandardMaterial3D_lswn8")
+mesh = SubResource("ImmediateMesh_a6jrf")
+
+[node name="@MeshInstance3D@151705" type="MeshInstance3D" parent="Orbital Lines" unique_id=1050000644]
+material_override = SubResource("StandardMaterial3D_xuqvo")
+mesh = SubResource("ImmediateMesh_qsp4k")
+
+[node name="@MeshInstance3D@153183" type="MeshInstance3D" parent="Orbital Lines" unique_id=1748343420]
+material_override = SubResource("StandardMaterial3D_kq58d")
+mesh = SubResource("ImmediateMesh_seu75")
+
+[node name="@MeshInstance3D@154636" type="MeshInstance3D" parent="Orbital Lines" unique_id=1315444297]
+material_override = SubResource("StandardMaterial3D_htxhm")
+mesh = SubResource("ImmediateMesh_jq2sk")
+
+[node name="@MeshInstance3D@155175" type="MeshInstance3D" parent="Orbital Lines" unique_id=446327618]
+material_override = SubResource("StandardMaterial3D_4k2k6")
+mesh = SubResource("ImmediateMesh_0rl1p")
+
+[node name="@MeshInstance3D@155705" type="MeshInstance3D" parent="Orbital Lines" unique_id=1555372344]
+material_override = SubResource("StandardMaterial3D_ok6jj")
+mesh = SubResource("ImmediateMesh_facbu")
+
+[node name="@MeshInstance3D@156705" type="MeshInstance3D" parent="Orbital Lines" unique_id=1698337409]
+material_override = SubResource("StandardMaterial3D_b1qrp")
+mesh = SubResource("ImmediateMesh_come4")
+
+[node name="@MeshInstance3D@157303" type="MeshInstance3D" parent="Orbital Lines" unique_id=221668677]
+material_override = SubResource("StandardMaterial3D_h8e4i")
+mesh = SubResource("ImmediateMesh_4lmeg")
+
+[node name="@MeshInstance3D@157850" type="MeshInstance3D" parent="Orbital Lines" unique_id=100779911]
+material_override = SubResource("StandardMaterial3D_0cp0l")
+mesh = SubResource("ImmediateMesh_d2t1y")
+
+[node name="@MeshInstance3D@158319" type="MeshInstance3D" parent="Orbital Lines" unique_id=1333811187]
+material_override = SubResource("StandardMaterial3D_gngh3")
+mesh = SubResource("ImmediateMesh_0n3wm")
+
+[node name="@MeshInstance3D@161227" type="MeshInstance3D" parent="Orbital Lines" unique_id=474849092]
+material_override = SubResource("StandardMaterial3D_qnost")
+mesh = SubResource("ImmediateMesh_wnkbs")
+
+[node name="@MeshInstance3D@162245" type="MeshInstance3D" parent="Orbital Lines" unique_id=591604775]
+material_override = SubResource("StandardMaterial3D_f6a44")
+mesh = SubResource("ImmediateMesh_0cbny")
+
+[node name="Player" type="MeshInstance3D" parent="." unique_id=424688616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 149598, 1000.9409, 0)
 mesh = SubResource("CapsuleMesh_ig7tw")
+
+[node name="Sun" type="MeshInstance3D" parent="." unique_id=1914324139]
+mesh = SubResource("SphereMesh_0xm2m")
+script = ExtResource("2_lquwl")
+
+[node name="Mercury" type="MeshInstance3D" parent="." unique_id=269009489 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 57909.227, 0, 0)
+mesh = SubResource("SphereMesh_h2yge")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 57909
+orbit_length_in_seconds = 144.48
+orbit_tilt = 90.0
+
+[node name="Venus" type="MeshInstance3D" parent="." unique_id=1689562870 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108209.48, 0, 0)
+mesh = SubResource("SphereMesh_1bvp3")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 108209
+orbit_length_in_seconds = 369.0
+
+[node name="Earth" type="MeshInstance3D" parent="." unique_id=1225540661 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 149598.02, 0, 0)
+mesh = SubResource("SphereMesh_lquwl")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 149598
+orbit_length_in_seconds = 600.0
+orbit_tilt = 5.845
+
+[node name="Moon" type="MeshInstance3D" parent="." unique_id=1036244156 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 149598.02, 0, 10610)
+mesh = SubResource("SphereMesh_7mycd")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Earth")
+radius = 10610
+orbit_length_in_seconds = 60.0
+
+[node name="Mars" type="MeshInstance3D" parent="." unique_id=851106793 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 227943.83, 0, 0)
+mesh = SubResource("SphereMesh_272bh")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 227944
+orbit_length_in_seconds = 1128.0
+
+[node name="Phobos" type="MeshInstance3D" parent="." unique_id=1778452569 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 227943.83, 0, 557.5)
+mesh = SubResource("SphereMesh_5vw27")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Mars")
+radius = 558
+orbit_length_in_seconds = 60.0
+
+[node name="Deimos" type="MeshInstance3D" parent="." unique_id=658296974 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 227943.83, 0, 1119)
+mesh = SubResource("SphereMesh_kek77")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Mars")
+radius = 1119
+orbit_length_in_seconds = 120.0
+
+[node name="Jupiter" type="MeshInstance3D" parent="." unique_id=98832185 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 778340.8, 0, 0)
+mesh = SubResource("SphereMesh_4c57u")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 778341
+orbit_length_in_seconds = 7116.0
+
+[node name="Ganymede" type="MeshInstance3D" parent="." unique_id=184007433 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 778340.8, 0, 37969.2)
+mesh = SubResource("SphereMesh_efxa6")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Jupiter")
+radius = 37969
+orbit_length_in_seconds = 180.0
+
+[node name="Callisto" type="MeshInstance3D" parent="." unique_id=1600282072 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 778340.8, 0, 58276.7)
+mesh = SubResource("SphereMesh_dg77c")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Jupiter")
+radius = 58277
+orbit_length_in_seconds = 240.0
+
+[node name="Io" type="MeshInstance3D" parent="." unique_id=1287866447 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 778340.8, 0, 21751.7)
+mesh = SubResource("SphereMesh_ycdy4")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Jupiter")
+radius = 21752
+orbit_length_in_seconds = 60.0
+
+[node name="Europa" type="MeshInstance3D" parent="." unique_id=1408310531 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 778340.8, 0, 27986.7)
+mesh = SubResource("SphereMesh_w48qg")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Jupiter")
+radius = 27987
+orbit_length_in_seconds = 120.0
+
+[node name="Saturn" type="MeshInstance3D" parent="." unique_id=1807273132 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1426666.4, 0, 0)
+mesh = SubResource("SphereMesh_vivmo")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 1426666
+orbit_length_in_seconds = 17676.0
+
+[node name="Titan" type="MeshInstance3D" parent="." unique_id=1422865673 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1426666.4, 0, 39996.15)
+mesh = SubResource("SphereMesh_2cqfq")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Saturn")
+radius = 39996
+orbit_length_in_seconds = 360.0
+
+[node name="Enceladus" type="MeshInstance3D" parent="." unique_id=108919949 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1426666.4, 0, 15399.4)
+mesh = SubResource("SphereMesh_yaehf")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Saturn")
+radius = 15399
+orbit_length_in_seconds = 120.0
+
+[node name="Mimas" type="MeshInstance3D" parent="." unique_id=320778363 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1426666.4, 0, 14087.9)
+mesh = SubResource("SphereMesh_074og")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Saturn")
+radius = 14088
+orbit_length_in_seconds = 60.0
+
+[node name="Tethys" type="MeshInstance3D" parent="." unique_id=73745274 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1426666.4, 0, 16816.15)
+mesh = SubResource("SphereMesh_cegan")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Saturn")
+radius = 16816
+orbit_length_in_seconds = 180.0
+
+[node name="Dione" type="MeshInstance3D" parent="." unique_id=202695574 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1426666.4, 0, 18884.4)
+mesh = SubResource("SphereMesh_82xsv")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Saturn")
+radius = 18884
+orbit_length_in_seconds = 240.0
+
+[node name="Rhea" type="MeshInstance3D" parent="." unique_id=946047724 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1426666.4, 0, 22626.15)
+mesh = SubResource("SphereMesh_getpj")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Saturn")
+radius = 22626
+orbit_length_in_seconds = 300.0
+
+[node name="Uranus" type="MeshInstance3D" parent="." unique_id=1415860843]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2870658.2, 0, 0)
+mesh = SubResource("SphereMesh_ryguw")
+script = ExtResource("2_lquwl")
+radius = 2870658
+orbit_length_in_seconds = 50406.0
+
+[node name="Titania" type="MeshInstance3D" parent="." unique_id=496536803 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2870658.2, 0, 14905.15)
+mesh = SubResource("SphereMesh_d13ii")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Uranus")
+radius = 14905
+orbit_length_in_seconds = 180.0
+
+[node name="Oberon" type="MeshInstance3D" parent="." unique_id=843425993 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2870658.2, 0, 18595.4)
+mesh = SubResource("SphereMesh_1u8w0")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Uranus")
+radius = 18595
+orbit_length_in_seconds = 240.0
+
+[node name="Umbriel" type="MeshInstance3D" parent="." unique_id=1241964879 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2870658.2, 0, 10657.4)
+mesh = SubResource("SphereMesh_0odxb")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Uranus")
+radius = 10657
+orbit_length_in_seconds = 120.0
+
+[node name="Ariel" type="MeshInstance3D" parent="." unique_id=1690120461 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2870658.2, 0, 8782.9)
+mesh = SubResource("SphereMesh_lswn8")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Uranus")
+radius = 8783
+orbit_length_in_seconds = 60.0
+
+[node name="Neptune" type="MeshInstance3D" parent="." unique_id=444447767 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4498396.5, 0, 0)
+mesh = SubResource("SphereMesh_a6jrf")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 4498397
+orbit_length_in_seconds = 98880.0
+
+[node name="Triton" type="MeshInstance3D" parent="." unique_id=494851631 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4498396.5, 0, 12751.7)
+mesh = SubResource("SphereMesh_xuqvo")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Neptune")
+radius = 12752
+orbit_length_in_seconds = 60.0
+
+[node name="Pluto" type="MeshInstance3D" parent="." unique_id=2011042919 node_paths=PackedStringArray("center_body")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5906376.5, 0, 0)
+mesh = SubResource("SphereMesh_qsp4k")
+script = ExtResource("2_lquwl")
+center_body = NodePath("../Sun")
+radius = 5906377
+orbit_length_in_seconds = 148000.0
