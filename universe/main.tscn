@@ -3,6 +3,8 @@
 [ext_resource type="Script" uid="uid://d34gfyg5j31tb" path="res://main2.gd" id="1_1bvp3"]
 [ext_resource type="Script" uid="uid://bh7x0eq3gb8pi" path="res://orbital_predictor2.gd" id="2_h2yge"]
 [ext_resource type="Script" uid="uid://dwdm5duslbeiw" path="res://celestial_body2.gd" id="2_lquwl"]
+[ext_resource type="Script" uid="uid://fx0nntqbvt3k" path="res://player.gd" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://dncrpmwrw6bfc" path="res://qwantani_moon_noon_puresky_4k.exr" id="5_lquwl"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h2yge"]
 shading_mode = 0
@@ -166,6 +168,978 @@ albedo_color = Color(0, 1, 1, 1)
 
 [sub_resource type="ImmediateMesh" id="ImmediateMesh_0cbny"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vivmo"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_2cqfq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yaehf"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_074og"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cegan"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_82xsv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_getpj"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ryguw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d13ii"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_1u8w0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0odxb"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_lswn8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a6jrf"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_xuqvo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qsp4k"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_kq58d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_seu75"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_htxhm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jq2sk"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_4k2k6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0rl1p"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ok6jj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_facbu"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_b1qrp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_come4"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_h8e4i"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4lmeg"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0cp0l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d2t1y"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_gngh3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0n3wm"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_qnost"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wnkbs"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_f6a44"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0cbny"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_hrvbo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uypp3"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_blkrb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_abqjc"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_6iyjs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4w656"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_e71vb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rnkwl"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_vke2r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uit24"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ruth0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rm4vd"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_pjyto"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sm6fg"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_b17eg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ntx8l"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_uatky"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rqtf5"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_1vm84"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_efxa6"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_dg77c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ycdy4"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_w48qg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hrvbo"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_uypp3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_blkrb"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_abqjc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6iyjs"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_4w656"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e71vb"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_rnkwl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vke2r"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_uit24"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ruth0"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_rm4vd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pjyto"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_sm6fg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b17eg"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ntx8l"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uatky"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_rqtf5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1vm84"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_wu3dr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cyx1q"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0dhbp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jx0wj"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_kkkcx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_34ol3"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_c2n8d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wy5fy"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_gx4rg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5dllo"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_phcyf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_birbe"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_f1p13"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4obbf"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ovcoh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ppx11"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_1yv1y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5yh34"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_pjuso"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_23xmf"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_swlj1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yysqy"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_n5t1e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_h6isl"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_53bls"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_lwnsi"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_41lik"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbvwl"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_sn1fb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yvsr8"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_vieuh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wu3dr"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_cyx1q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0dhbp"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_jx0wj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_kkkcx"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_34ol3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c2n8d"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_wy5fy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gx4rg"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_5dllo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_phcyf"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_birbe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f1p13"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_4obbf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ovcoh"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ppx11"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1yv1y"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_5yh34"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pjuso"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_23xmf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_swlj1"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_yysqy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5t1e"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_h6isl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_53bls"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_lwnsi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_41lik"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_jbvwl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sn1fb"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_yvsr8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vieuh"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_yjja3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l0gw7"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_inymm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jcxqu"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0arob"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_dij0e"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_k1udn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wat4s"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ywjan"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m74q3"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_tko6h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_am8a1"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_8dc3g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_htgcl"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_smeu8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_f3y11"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_cpm2s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u81y6"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_rt5wr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mnw77"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_vjgyh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_d5iia"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_asu84"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yjja3"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_l0gw7"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_inymm"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_jcxqu"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0arob"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_dij0e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k1udn"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_wat4s"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ywjan"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_m74q3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tko6h"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_am8a1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8dc3g"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_htgcl"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_smeu8"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_f3y11"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cpm2s"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_u81y6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rt5wr"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_mnw77"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vjgyh"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_d5iia"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_asu84"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_qwt6e"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_off2o"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_tttfs"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1iygd"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_g5xqc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s4o1y"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_7mmqq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3exxq"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_5aa3q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bmvma"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_shlp4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2n44k"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_86lig"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ldnlw"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_qe8ju"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bnk2o"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_oosfy"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nf4f2"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_xkvoa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t5kpo"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_pw0td"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_37eu1"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0wkqm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ve5sr"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_5s44m"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ibca3"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_g3y5b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1slqb"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_uo83y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0aao"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_wm5rm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qwt6e"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_off2o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tttfs"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_1iygd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g5xqc"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_s4o1y"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7mmqq"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_3exxq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5aa3q"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_bmvma"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_shlp4"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_2n44k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_86lig"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ldnlw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qe8ju"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_bnk2o"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oosfy"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_nf4f2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xkvoa"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_t5kpo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pw0td"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_37eu1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0wkqm"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ve5sr"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5s44m"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ibca3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g3y5b"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_1slqb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_uo83y"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_y0aao"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wm5rm"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ekl5k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fdpg8"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_rpys8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6gr3f"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_6seew"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3ox4t"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_4fmho"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aivy6"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_bil4k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hnquj"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0h8y2"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nycv6"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_x4ftd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_arf1h"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_s0om5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gkfde"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_4qxq8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ryg4g"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_oy6td"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fe76k"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_p5pln"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oiuw5"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_mldrc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ekl5k"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_fdpg8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rpys8"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_6gr3f"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6seew"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_3ox4t"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4fmho"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_aivy6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bil4k"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_hnquj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0h8y2"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_nycv6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_x4ftd"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_arf1h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s0om5"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_gkfde"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4qxq8"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_ryg4g"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oy6td"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_fe76k"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_p5pln"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_oiuw5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mldrc"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_1tiwm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xxpw2"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_wghq8"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_k08w7"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_hp4ct"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_suf1q"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_lxb2r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ceu5l"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_lv1ug"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mofpq"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_6kttw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oqmj5"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_uor2d"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bdw5g"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_j6smb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xp7cv"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_6ff2c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ly5pk"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_s0u5n"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8lrju"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_5kegx"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afgqn"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_jvn2n"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jegnu"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_rx6mv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_31js7"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_0a4i0"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i0xsp"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_kll2q"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ft875"]
+shading_mode = 0
+albedo_color = Color(0, 1, 1, 1)
+
+[sub_resource type="ImmediateMesh" id="ImmediateMesh_6hmxt"]
+
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ig7tw"]
 
 [sub_resource type="SphereMesh" id="SphereMesh_0xm2m"]
@@ -280,6 +1254,16 @@ height = 424.4
 radius = 186.3
 height = 372.6
 
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_7mycd"]
+panorama = ExtResource("5_lquwl")
+
+[sub_resource type="Sky" id="Sky_272bh"]
+sky_material = SubResource("PanoramaSkyMaterial_7mycd")
+
+[sub_resource type="Environment" id="Environment_5vw27"]
+background_mode = 1
+sky = SubResource("Sky_272bh")
+
 [node name="Main" type="Node3D" unique_id=681199823]
 script = ExtResource("1_1bvp3")
 
@@ -288,7 +1272,7 @@ transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 2398
 far = 1000000.0
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1486078614]
-transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 1500, 0)
+transform = Transform3D(1, 0, 0, 0, 0.70710677, 0.70710677, 0, -0.70710677, 0.70710677, 0, 15482.259, 0)
 
 [node name="Orbital Lines" type="Node3D" parent="." unique_id=1730881336]
 script = ExtResource("2_h2yge")
@@ -402,9 +1386,659 @@ mesh = SubResource("ImmediateMesh_wnkbs")
 material_override = SubResource("StandardMaterial3D_f6a44")
 mesh = SubResource("ImmediateMesh_0cbny")
 
+[node name="@MeshInstance3D@179952" type="MeshInstance3D" parent="Orbital Lines" unique_id=868565011]
+material_override = SubResource("StandardMaterial3D_vivmo")
+mesh = SubResource("ImmediateMesh_2cqfq")
+
+[node name="@MeshInstance3D@179953" type="MeshInstance3D" parent="Orbital Lines" unique_id=667129827]
+material_override = SubResource("StandardMaterial3D_yaehf")
+mesh = SubResource("ImmediateMesh_074og")
+
+[node name="@MeshInstance3D@179954" type="MeshInstance3D" parent="Orbital Lines" unique_id=495669394]
+material_override = SubResource("StandardMaterial3D_cegan")
+mesh = SubResource("ImmediateMesh_82xsv")
+
+[node name="@MeshInstance3D@179955" type="MeshInstance3D" parent="Orbital Lines" unique_id=916110478]
+material_override = SubResource("StandardMaterial3D_getpj")
+mesh = SubResource("ImmediateMesh_ryguw")
+
+[node name="@MeshInstance3D@179956" type="MeshInstance3D" parent="Orbital Lines" unique_id=245507353]
+material_override = SubResource("StandardMaterial3D_d13ii")
+mesh = SubResource("ImmediateMesh_1u8w0")
+
+[node name="@MeshInstance3D@179957" type="MeshInstance3D" parent="Orbital Lines" unique_id=880443473]
+material_override = SubResource("StandardMaterial3D_0odxb")
+mesh = SubResource("ImmediateMesh_lswn8")
+
+[node name="@MeshInstance3D@179958" type="MeshInstance3D" parent="Orbital Lines" unique_id=804574282]
+material_override = SubResource("StandardMaterial3D_a6jrf")
+mesh = SubResource("ImmediateMesh_xuqvo")
+
+[node name="@MeshInstance3D@179959" type="MeshInstance3D" parent="Orbital Lines" unique_id=16328642]
+material_override = SubResource("StandardMaterial3D_qsp4k")
+mesh = SubResource("ImmediateMesh_kq58d")
+
+[node name="@MeshInstance3D@179960" type="MeshInstance3D" parent="Orbital Lines" unique_id=1272188060]
+material_override = SubResource("StandardMaterial3D_seu75")
+mesh = SubResource("ImmediateMesh_htxhm")
+
+[node name="@MeshInstance3D@179961" type="MeshInstance3D" parent="Orbital Lines" unique_id=684470425]
+material_override = SubResource("StandardMaterial3D_jq2sk")
+mesh = SubResource("ImmediateMesh_4k2k6")
+
+[node name="@MeshInstance3D@179962" type="MeshInstance3D" parent="Orbital Lines" unique_id=1213286129]
+material_override = SubResource("StandardMaterial3D_0rl1p")
+mesh = SubResource("ImmediateMesh_ok6jj")
+
+[node name="@MeshInstance3D@179963" type="MeshInstance3D" parent="Orbital Lines" unique_id=998591335]
+material_override = SubResource("StandardMaterial3D_facbu")
+mesh = SubResource("ImmediateMesh_b1qrp")
+
+[node name="@MeshInstance3D@179964" type="MeshInstance3D" parent="Orbital Lines" unique_id=1423467883]
+material_override = SubResource("StandardMaterial3D_come4")
+mesh = SubResource("ImmediateMesh_h8e4i")
+
+[node name="@MeshInstance3D@179965" type="MeshInstance3D" parent="Orbital Lines" unique_id=1263318585]
+material_override = SubResource("StandardMaterial3D_4lmeg")
+mesh = SubResource("ImmediateMesh_0cp0l")
+
+[node name="@MeshInstance3D@179966" type="MeshInstance3D" parent="Orbital Lines" unique_id=1748545600]
+material_override = SubResource("StandardMaterial3D_d2t1y")
+mesh = SubResource("ImmediateMesh_gngh3")
+
+[node name="@MeshInstance3D@179967" type="MeshInstance3D" parent="Orbital Lines" unique_id=2101816185]
+material_override = SubResource("StandardMaterial3D_0n3wm")
+mesh = SubResource("ImmediateMesh_qnost")
+
+[node name="@MeshInstance3D@179968" type="MeshInstance3D" parent="Orbital Lines" unique_id=1378852047]
+material_override = SubResource("StandardMaterial3D_wnkbs")
+mesh = SubResource("ImmediateMesh_f6a44")
+
+[node name="@MeshInstance3D@179969" type="MeshInstance3D" parent="Orbital Lines" unique_id=1680602950]
+material_override = SubResource("StandardMaterial3D_0cbny")
+mesh = SubResource("ImmediateMesh_hrvbo")
+
+[node name="@MeshInstance3D@179970" type="MeshInstance3D" parent="Orbital Lines" unique_id=1080513371]
+material_override = SubResource("StandardMaterial3D_uypp3")
+mesh = SubResource("ImmediateMesh_blkrb")
+
+[node name="@MeshInstance3D@179971" type="MeshInstance3D" parent="Orbital Lines" unique_id=577434907]
+material_override = SubResource("StandardMaterial3D_abqjc")
+mesh = SubResource("ImmediateMesh_6iyjs")
+
+[node name="@MeshInstance3D@179972" type="MeshInstance3D" parent="Orbital Lines" unique_id=234534582]
+material_override = SubResource("StandardMaterial3D_4w656")
+mesh = SubResource("ImmediateMesh_e71vb")
+
+[node name="@MeshInstance3D@179973" type="MeshInstance3D" parent="Orbital Lines" unique_id=337141698]
+material_override = SubResource("StandardMaterial3D_rnkwl")
+mesh = SubResource("ImmediateMesh_vke2r")
+
+[node name="@MeshInstance3D@179974" type="MeshInstance3D" parent="Orbital Lines" unique_id=1510938743]
+material_override = SubResource("StandardMaterial3D_uit24")
+mesh = SubResource("ImmediateMesh_ruth0")
+
+[node name="@MeshInstance3D@179975" type="MeshInstance3D" parent="Orbital Lines" unique_id=1869072123]
+material_override = SubResource("StandardMaterial3D_rm4vd")
+mesh = SubResource("ImmediateMesh_pjyto")
+
+[node name="@MeshInstance3D@179976" type="MeshInstance3D" parent="Orbital Lines" unique_id=1818039023]
+material_override = SubResource("StandardMaterial3D_sm6fg")
+mesh = SubResource("ImmediateMesh_b17eg")
+
+[node name="@MeshInstance3D@179977" type="MeshInstance3D" parent="Orbital Lines" unique_id=1184708298]
+material_override = SubResource("StandardMaterial3D_ntx8l")
+mesh = SubResource("ImmediateMesh_uatky")
+
+[node name="@MeshInstance3D@179978" type="MeshInstance3D" parent="Orbital Lines" unique_id=648187983]
+material_override = SubResource("StandardMaterial3D_rqtf5")
+mesh = SubResource("ImmediateMesh_1vm84")
+
+[node name="@MeshInstance3D@182314" type="MeshInstance3D" parent="Orbital Lines" unique_id=522280778]
+material_override = SubResource("StandardMaterial3D_efxa6")
+mesh = SubResource("ImmediateMesh_dg77c")
+
+[node name="@MeshInstance3D@182315" type="MeshInstance3D" parent="Orbital Lines" unique_id=518280932]
+material_override = SubResource("StandardMaterial3D_ycdy4")
+mesh = SubResource("ImmediateMesh_w48qg")
+
+[node name="@MeshInstance3D@182316" type="MeshInstance3D" parent="Orbital Lines" unique_id=619685199]
+material_override = SubResource("StandardMaterial3D_hrvbo")
+mesh = SubResource("ImmediateMesh_uypp3")
+
+[node name="@MeshInstance3D@182317" type="MeshInstance3D" parent="Orbital Lines" unique_id=1330700018]
+material_override = SubResource("StandardMaterial3D_blkrb")
+mesh = SubResource("ImmediateMesh_abqjc")
+
+[node name="@MeshInstance3D@182318" type="MeshInstance3D" parent="Orbital Lines" unique_id=809222180]
+material_override = SubResource("StandardMaterial3D_6iyjs")
+mesh = SubResource("ImmediateMesh_4w656")
+
+[node name="@MeshInstance3D@182319" type="MeshInstance3D" parent="Orbital Lines" unique_id=292961313]
+material_override = SubResource("StandardMaterial3D_e71vb")
+mesh = SubResource("ImmediateMesh_rnkwl")
+
+[node name="@MeshInstance3D@182320" type="MeshInstance3D" parent="Orbital Lines" unique_id=739369997]
+material_override = SubResource("StandardMaterial3D_vke2r")
+mesh = SubResource("ImmediateMesh_uit24")
+
+[node name="@MeshInstance3D@182321" type="MeshInstance3D" parent="Orbital Lines" unique_id=1982040703]
+material_override = SubResource("StandardMaterial3D_ruth0")
+mesh = SubResource("ImmediateMesh_rm4vd")
+
+[node name="@MeshInstance3D@182322" type="MeshInstance3D" parent="Orbital Lines" unique_id=758334667]
+material_override = SubResource("StandardMaterial3D_pjyto")
+mesh = SubResource("ImmediateMesh_sm6fg")
+
+[node name="@MeshInstance3D@182323" type="MeshInstance3D" parent="Orbital Lines" unique_id=1513313349]
+material_override = SubResource("StandardMaterial3D_b17eg")
+mesh = SubResource("ImmediateMesh_ntx8l")
+
+[node name="@MeshInstance3D@182324" type="MeshInstance3D" parent="Orbital Lines" unique_id=564950890]
+material_override = SubResource("StandardMaterial3D_uatky")
+mesh = SubResource("ImmediateMesh_rqtf5")
+
+[node name="@MeshInstance3D@182325" type="MeshInstance3D" parent="Orbital Lines" unique_id=1138443785]
+material_override = SubResource("StandardMaterial3D_1vm84")
+mesh = SubResource("ImmediateMesh_wu3dr")
+
+[node name="@MeshInstance3D@182326" type="MeshInstance3D" parent="Orbital Lines" unique_id=1542118005]
+material_override = SubResource("StandardMaterial3D_cyx1q")
+mesh = SubResource("ImmediateMesh_0dhbp")
+
+[node name="@MeshInstance3D@182327" type="MeshInstance3D" parent="Orbital Lines" unique_id=1405806692]
+material_override = SubResource("StandardMaterial3D_jx0wj")
+mesh = SubResource("ImmediateMesh_kkkcx")
+
+[node name="@MeshInstance3D@182328" type="MeshInstance3D" parent="Orbital Lines" unique_id=435715578]
+material_override = SubResource("StandardMaterial3D_34ol3")
+mesh = SubResource("ImmediateMesh_c2n8d")
+
+[node name="@MeshInstance3D@182329" type="MeshInstance3D" parent="Orbital Lines" unique_id=1596072797]
+material_override = SubResource("StandardMaterial3D_wy5fy")
+mesh = SubResource("ImmediateMesh_gx4rg")
+
+[node name="@MeshInstance3D@182330" type="MeshInstance3D" parent="Orbital Lines" unique_id=1539062914]
+material_override = SubResource("StandardMaterial3D_5dllo")
+mesh = SubResource("ImmediateMesh_phcyf")
+
+[node name="@MeshInstance3D@182331" type="MeshInstance3D" parent="Orbital Lines" unique_id=1001513553]
+material_override = SubResource("StandardMaterial3D_birbe")
+mesh = SubResource("ImmediateMesh_f1p13")
+
+[node name="@MeshInstance3D@182332" type="MeshInstance3D" parent="Orbital Lines" unique_id=360300849]
+material_override = SubResource("StandardMaterial3D_4obbf")
+mesh = SubResource("ImmediateMesh_ovcoh")
+
+[node name="@MeshInstance3D@182333" type="MeshInstance3D" parent="Orbital Lines" unique_id=506266872]
+material_override = SubResource("StandardMaterial3D_ppx11")
+mesh = SubResource("ImmediateMesh_1yv1y")
+
+[node name="@MeshInstance3D@182334" type="MeshInstance3D" parent="Orbital Lines" unique_id=1605205463]
+material_override = SubResource("StandardMaterial3D_5yh34")
+mesh = SubResource("ImmediateMesh_pjuso")
+
+[node name="@MeshInstance3D@182335" type="MeshInstance3D" parent="Orbital Lines" unique_id=1262364338]
+material_override = SubResource("StandardMaterial3D_23xmf")
+mesh = SubResource("ImmediateMesh_swlj1")
+
+[node name="@MeshInstance3D@182336" type="MeshInstance3D" parent="Orbital Lines" unique_id=447963211]
+material_override = SubResource("StandardMaterial3D_yysqy")
+mesh = SubResource("ImmediateMesh_n5t1e")
+
+[node name="@MeshInstance3D@182337" type="MeshInstance3D" parent="Orbital Lines" unique_id=1182346455]
+material_override = SubResource("StandardMaterial3D_h6isl")
+mesh = SubResource("ImmediateMesh_53bls")
+
+[node name="@MeshInstance3D@182338" type="MeshInstance3D" parent="Orbital Lines" unique_id=1512755815]
+material_override = SubResource("StandardMaterial3D_lwnsi")
+mesh = SubResource("ImmediateMesh_41lik")
+
+[node name="@MeshInstance3D@182339" type="MeshInstance3D" parent="Orbital Lines" unique_id=729689578]
+material_override = SubResource("StandardMaterial3D_jbvwl")
+mesh = SubResource("ImmediateMesh_sn1fb")
+
+[node name="@MeshInstance3D@182340" type="MeshInstance3D" parent="Orbital Lines" unique_id=1330229641]
+material_override = SubResource("StandardMaterial3D_yvsr8")
+mesh = SubResource("ImmediateMesh_vieuh")
+
+[node name="@MeshInstance3D@184389" type="MeshInstance3D" parent="Orbital Lines" unique_id=1074942697]
+material_override = SubResource("StandardMaterial3D_wu3dr")
+mesh = SubResource("ImmediateMesh_cyx1q")
+
+[node name="@MeshInstance3D@184390" type="MeshInstance3D" parent="Orbital Lines" unique_id=332381294]
+material_override = SubResource("StandardMaterial3D_0dhbp")
+mesh = SubResource("ImmediateMesh_jx0wj")
+
+[node name="@MeshInstance3D@184391" type="MeshInstance3D" parent="Orbital Lines" unique_id=1753200084]
+material_override = SubResource("StandardMaterial3D_kkkcx")
+mesh = SubResource("ImmediateMesh_34ol3")
+
+[node name="@MeshInstance3D@184392" type="MeshInstance3D" parent="Orbital Lines" unique_id=1339396320]
+material_override = SubResource("StandardMaterial3D_c2n8d")
+mesh = SubResource("ImmediateMesh_wy5fy")
+
+[node name="@MeshInstance3D@184393" type="MeshInstance3D" parent="Orbital Lines" unique_id=205893230]
+material_override = SubResource("StandardMaterial3D_gx4rg")
+mesh = SubResource("ImmediateMesh_5dllo")
+
+[node name="@MeshInstance3D@184394" type="MeshInstance3D" parent="Orbital Lines" unique_id=1862610928]
+material_override = SubResource("StandardMaterial3D_phcyf")
+mesh = SubResource("ImmediateMesh_birbe")
+
+[node name="@MeshInstance3D@184395" type="MeshInstance3D" parent="Orbital Lines" unique_id=1649071783]
+material_override = SubResource("StandardMaterial3D_f1p13")
+mesh = SubResource("ImmediateMesh_4obbf")
+
+[node name="@MeshInstance3D@184396" type="MeshInstance3D" parent="Orbital Lines" unique_id=1437100878]
+material_override = SubResource("StandardMaterial3D_ovcoh")
+mesh = SubResource("ImmediateMesh_ppx11")
+
+[node name="@MeshInstance3D@184397" type="MeshInstance3D" parent="Orbital Lines" unique_id=1411729123]
+material_override = SubResource("StandardMaterial3D_1yv1y")
+mesh = SubResource("ImmediateMesh_5yh34")
+
+[node name="@MeshInstance3D@184398" type="MeshInstance3D" parent="Orbital Lines" unique_id=953651598]
+material_override = SubResource("StandardMaterial3D_pjuso")
+mesh = SubResource("ImmediateMesh_23xmf")
+
+[node name="@MeshInstance3D@184399" type="MeshInstance3D" parent="Orbital Lines" unique_id=974657862]
+material_override = SubResource("StandardMaterial3D_swlj1")
+mesh = SubResource("ImmediateMesh_yysqy")
+
+[node name="@MeshInstance3D@184400" type="MeshInstance3D" parent="Orbital Lines" unique_id=1056062833]
+material_override = SubResource("StandardMaterial3D_n5t1e")
+mesh = SubResource("ImmediateMesh_h6isl")
+
+[node name="@MeshInstance3D@184401" type="MeshInstance3D" parent="Orbital Lines" unique_id=519127182]
+material_override = SubResource("StandardMaterial3D_53bls")
+mesh = SubResource("ImmediateMesh_lwnsi")
+
+[node name="@MeshInstance3D@184402" type="MeshInstance3D" parent="Orbital Lines" unique_id=2107862355]
+material_override = SubResource("StandardMaterial3D_41lik")
+mesh = SubResource("ImmediateMesh_jbvwl")
+
+[node name="@MeshInstance3D@184403" type="MeshInstance3D" parent="Orbital Lines" unique_id=973861580]
+material_override = SubResource("StandardMaterial3D_sn1fb")
+mesh = SubResource("ImmediateMesh_yvsr8")
+
+[node name="@MeshInstance3D@184404" type="MeshInstance3D" parent="Orbital Lines" unique_id=824565861]
+material_override = SubResource("StandardMaterial3D_vieuh")
+mesh = SubResource("ImmediateMesh_yjja3")
+
+[node name="@MeshInstance3D@184405" type="MeshInstance3D" parent="Orbital Lines" unique_id=1299203662]
+material_override = SubResource("StandardMaterial3D_l0gw7")
+mesh = SubResource("ImmediateMesh_inymm")
+
+[node name="@MeshInstance3D@184406" type="MeshInstance3D" parent="Orbital Lines" unique_id=193308456]
+material_override = SubResource("StandardMaterial3D_jcxqu")
+mesh = SubResource("ImmediateMesh_0arob")
+
+[node name="@MeshInstance3D@184407" type="MeshInstance3D" parent="Orbital Lines" unique_id=502142728]
+material_override = SubResource("StandardMaterial3D_dij0e")
+mesh = SubResource("ImmediateMesh_k1udn")
+
+[node name="@MeshInstance3D@184408" type="MeshInstance3D" parent="Orbital Lines" unique_id=1119823000]
+material_override = SubResource("StandardMaterial3D_wat4s")
+mesh = SubResource("ImmediateMesh_ywjan")
+
+[node name="@MeshInstance3D@184409" type="MeshInstance3D" parent="Orbital Lines" unique_id=2062963043]
+material_override = SubResource("StandardMaterial3D_m74q3")
+mesh = SubResource("ImmediateMesh_tko6h")
+
+[node name="@MeshInstance3D@184410" type="MeshInstance3D" parent="Orbital Lines" unique_id=707444508]
+material_override = SubResource("StandardMaterial3D_am8a1")
+mesh = SubResource("ImmediateMesh_8dc3g")
+
+[node name="@MeshInstance3D@184411" type="MeshInstance3D" parent="Orbital Lines" unique_id=490271969]
+material_override = SubResource("StandardMaterial3D_htgcl")
+mesh = SubResource("ImmediateMesh_smeu8")
+
+[node name="@MeshInstance3D@184412" type="MeshInstance3D" parent="Orbital Lines" unique_id=888725145]
+material_override = SubResource("StandardMaterial3D_f3y11")
+mesh = SubResource("ImmediateMesh_cpm2s")
+
+[node name="@MeshInstance3D@184413" type="MeshInstance3D" parent="Orbital Lines" unique_id=836980186]
+material_override = SubResource("StandardMaterial3D_u81y6")
+mesh = SubResource("ImmediateMesh_rt5wr")
+
+[node name="@MeshInstance3D@184414" type="MeshInstance3D" parent="Orbital Lines" unique_id=1760168617]
+material_override = SubResource("StandardMaterial3D_mnw77")
+mesh = SubResource("ImmediateMesh_vjgyh")
+
+[node name="@MeshInstance3D@184415" type="MeshInstance3D" parent="Orbital Lines" unique_id=1035247750]
+material_override = SubResource("StandardMaterial3D_d5iia")
+mesh = SubResource("ImmediateMesh_asu84")
+
+[node name="@MeshInstance3D@185328" type="MeshInstance3D" parent="Orbital Lines" unique_id=366010981]
+material_override = SubResource("StandardMaterial3D_yjja3")
+mesh = SubResource("ImmediateMesh_l0gw7")
+
+[node name="@MeshInstance3D@185329" type="MeshInstance3D" parent="Orbital Lines" unique_id=271982251]
+material_override = SubResource("StandardMaterial3D_inymm")
+mesh = SubResource("ImmediateMesh_jcxqu")
+
+[node name="@MeshInstance3D@185330" type="MeshInstance3D" parent="Orbital Lines" unique_id=1158614516]
+material_override = SubResource("StandardMaterial3D_0arob")
+mesh = SubResource("ImmediateMesh_dij0e")
+
+[node name="@MeshInstance3D@185331" type="MeshInstance3D" parent="Orbital Lines" unique_id=1320963730]
+material_override = SubResource("StandardMaterial3D_k1udn")
+mesh = SubResource("ImmediateMesh_wat4s")
+
+[node name="@MeshInstance3D@185332" type="MeshInstance3D" parent="Orbital Lines" unique_id=1671647763]
+material_override = SubResource("StandardMaterial3D_ywjan")
+mesh = SubResource("ImmediateMesh_m74q3")
+
+[node name="@MeshInstance3D@185333" type="MeshInstance3D" parent="Orbital Lines" unique_id=925404042]
+material_override = SubResource("StandardMaterial3D_tko6h")
+mesh = SubResource("ImmediateMesh_am8a1")
+
+[node name="@MeshInstance3D@185334" type="MeshInstance3D" parent="Orbital Lines" unique_id=1024100523]
+material_override = SubResource("StandardMaterial3D_8dc3g")
+mesh = SubResource("ImmediateMesh_htgcl")
+
+[node name="@MeshInstance3D@185335" type="MeshInstance3D" parent="Orbital Lines" unique_id=225182620]
+material_override = SubResource("StandardMaterial3D_smeu8")
+mesh = SubResource("ImmediateMesh_f3y11")
+
+[node name="@MeshInstance3D@185336" type="MeshInstance3D" parent="Orbital Lines" unique_id=162917680]
+material_override = SubResource("StandardMaterial3D_cpm2s")
+mesh = SubResource("ImmediateMesh_u81y6")
+
+[node name="@MeshInstance3D@185337" type="MeshInstance3D" parent="Orbital Lines" unique_id=700945677]
+material_override = SubResource("StandardMaterial3D_rt5wr")
+mesh = SubResource("ImmediateMesh_mnw77")
+
+[node name="@MeshInstance3D@185338" type="MeshInstance3D" parent="Orbital Lines" unique_id=1720008066]
+material_override = SubResource("StandardMaterial3D_vjgyh")
+mesh = SubResource("ImmediateMesh_d5iia")
+
+[node name="@MeshInstance3D@185339" type="MeshInstance3D" parent="Orbital Lines" unique_id=1513547478]
+material_override = SubResource("StandardMaterial3D_asu84")
+mesh = SubResource("ImmediateMesh_qwt6e")
+
+[node name="@MeshInstance3D@185340" type="MeshInstance3D" parent="Orbital Lines" unique_id=84103001]
+material_override = SubResource("StandardMaterial3D_off2o")
+mesh = SubResource("ImmediateMesh_tttfs")
+
+[node name="@MeshInstance3D@185341" type="MeshInstance3D" parent="Orbital Lines" unique_id=1717385194]
+material_override = SubResource("StandardMaterial3D_1iygd")
+mesh = SubResource("ImmediateMesh_g5xqc")
+
+[node name="@MeshInstance3D@185342" type="MeshInstance3D" parent="Orbital Lines" unique_id=1480803011]
+material_override = SubResource("StandardMaterial3D_s4o1y")
+mesh = SubResource("ImmediateMesh_7mmqq")
+
+[node name="@MeshInstance3D@185343" type="MeshInstance3D" parent="Orbital Lines" unique_id=375425214]
+material_override = SubResource("StandardMaterial3D_3exxq")
+mesh = SubResource("ImmediateMesh_5aa3q")
+
+[node name="@MeshInstance3D@185344" type="MeshInstance3D" parent="Orbital Lines" unique_id=503858736]
+material_override = SubResource("StandardMaterial3D_bmvma")
+mesh = SubResource("ImmediateMesh_shlp4")
+
+[node name="@MeshInstance3D@185345" type="MeshInstance3D" parent="Orbital Lines" unique_id=563663980]
+material_override = SubResource("StandardMaterial3D_2n44k")
+mesh = SubResource("ImmediateMesh_86lig")
+
+[node name="@MeshInstance3D@185346" type="MeshInstance3D" parent="Orbital Lines" unique_id=664302542]
+material_override = SubResource("StandardMaterial3D_ldnlw")
+mesh = SubResource("ImmediateMesh_qe8ju")
+
+[node name="@MeshInstance3D@185347" type="MeshInstance3D" parent="Orbital Lines" unique_id=1829929166]
+material_override = SubResource("StandardMaterial3D_bnk2o")
+mesh = SubResource("ImmediateMesh_oosfy")
+
+[node name="@MeshInstance3D@185348" type="MeshInstance3D" parent="Orbital Lines" unique_id=1896710360]
+material_override = SubResource("StandardMaterial3D_nf4f2")
+mesh = SubResource("ImmediateMesh_xkvoa")
+
+[node name="@MeshInstance3D@185349" type="MeshInstance3D" parent="Orbital Lines" unique_id=1199909409]
+material_override = SubResource("StandardMaterial3D_t5kpo")
+mesh = SubResource("ImmediateMesh_pw0td")
+
+[node name="@MeshInstance3D@185350" type="MeshInstance3D" parent="Orbital Lines" unique_id=190511878]
+material_override = SubResource("StandardMaterial3D_37eu1")
+mesh = SubResource("ImmediateMesh_0wkqm")
+
+[node name="@MeshInstance3D@185351" type="MeshInstance3D" parent="Orbital Lines" unique_id=356790363]
+material_override = SubResource("StandardMaterial3D_ve5sr")
+mesh = SubResource("ImmediateMesh_5s44m")
+
+[node name="@MeshInstance3D@185352" type="MeshInstance3D" parent="Orbital Lines" unique_id=1604935042]
+material_override = SubResource("StandardMaterial3D_ibca3")
+mesh = SubResource("ImmediateMesh_g3y5b")
+
+[node name="@MeshInstance3D@185353" type="MeshInstance3D" parent="Orbital Lines" unique_id=956455975]
+material_override = SubResource("StandardMaterial3D_1slqb")
+mesh = SubResource("ImmediateMesh_uo83y")
+
+[node name="@MeshInstance3D@185354" type="MeshInstance3D" parent="Orbital Lines" unique_id=395919537]
+material_override = SubResource("StandardMaterial3D_y0aao")
+mesh = SubResource("ImmediateMesh_wm5rm")
+
+[node name="@MeshInstance3D@189275" type="MeshInstance3D" parent="Orbital Lines" unique_id=891405051]
+material_override = SubResource("StandardMaterial3D_qwt6e")
+mesh = SubResource("ImmediateMesh_off2o")
+
+[node name="@MeshInstance3D@189276" type="MeshInstance3D" parent="Orbital Lines" unique_id=1373754639]
+material_override = SubResource("StandardMaterial3D_tttfs")
+mesh = SubResource("ImmediateMesh_1iygd")
+
+[node name="@MeshInstance3D@189277" type="MeshInstance3D" parent="Orbital Lines" unique_id=2015413077]
+material_override = SubResource("StandardMaterial3D_g5xqc")
+mesh = SubResource("ImmediateMesh_s4o1y")
+
+[node name="@MeshInstance3D@189278" type="MeshInstance3D" parent="Orbital Lines" unique_id=1826595171]
+material_override = SubResource("StandardMaterial3D_7mmqq")
+mesh = SubResource("ImmediateMesh_3exxq")
+
+[node name="@MeshInstance3D@189279" type="MeshInstance3D" parent="Orbital Lines" unique_id=886272418]
+material_override = SubResource("StandardMaterial3D_5aa3q")
+mesh = SubResource("ImmediateMesh_bmvma")
+
+[node name="@MeshInstance3D@189280" type="MeshInstance3D" parent="Orbital Lines" unique_id=1428770839]
+material_override = SubResource("StandardMaterial3D_shlp4")
+mesh = SubResource("ImmediateMesh_2n44k")
+
+[node name="@MeshInstance3D@189281" type="MeshInstance3D" parent="Orbital Lines" unique_id=270676193]
+material_override = SubResource("StandardMaterial3D_86lig")
+mesh = SubResource("ImmediateMesh_ldnlw")
+
+[node name="@MeshInstance3D@189282" type="MeshInstance3D" parent="Orbital Lines" unique_id=1223778614]
+material_override = SubResource("StandardMaterial3D_qe8ju")
+mesh = SubResource("ImmediateMesh_bnk2o")
+
+[node name="@MeshInstance3D@189283" type="MeshInstance3D" parent="Orbital Lines" unique_id=1553974403]
+material_override = SubResource("StandardMaterial3D_oosfy")
+mesh = SubResource("ImmediateMesh_nf4f2")
+
+[node name="@MeshInstance3D@189284" type="MeshInstance3D" parent="Orbital Lines" unique_id=1785673746]
+material_override = SubResource("StandardMaterial3D_xkvoa")
+mesh = SubResource("ImmediateMesh_t5kpo")
+
+[node name="@MeshInstance3D@189285" type="MeshInstance3D" parent="Orbital Lines" unique_id=662353464]
+material_override = SubResource("StandardMaterial3D_pw0td")
+mesh = SubResource("ImmediateMesh_37eu1")
+
+[node name="@MeshInstance3D@189286" type="MeshInstance3D" parent="Orbital Lines" unique_id=147138061]
+material_override = SubResource("StandardMaterial3D_0wkqm")
+mesh = SubResource("ImmediateMesh_ve5sr")
+
+[node name="@MeshInstance3D@189287" type="MeshInstance3D" parent="Orbital Lines" unique_id=679279927]
+material_override = SubResource("StandardMaterial3D_5s44m")
+mesh = SubResource("ImmediateMesh_ibca3")
+
+[node name="@MeshInstance3D@189288" type="MeshInstance3D" parent="Orbital Lines" unique_id=261038531]
+material_override = SubResource("StandardMaterial3D_g3y5b")
+mesh = SubResource("ImmediateMesh_1slqb")
+
+[node name="@MeshInstance3D@189289" type="MeshInstance3D" parent="Orbital Lines" unique_id=1206684383]
+material_override = SubResource("StandardMaterial3D_uo83y")
+mesh = SubResource("ImmediateMesh_y0aao")
+
+[node name="@MeshInstance3D@189290" type="MeshInstance3D" parent="Orbital Lines" unique_id=1007598043]
+material_override = SubResource("StandardMaterial3D_wm5rm")
+mesh = SubResource("ImmediateMesh_ekl5k")
+
+[node name="@MeshInstance3D@189291" type="MeshInstance3D" parent="Orbital Lines" unique_id=188716590]
+material_override = SubResource("StandardMaterial3D_fdpg8")
+mesh = SubResource("ImmediateMesh_rpys8")
+
+[node name="@MeshInstance3D@189292" type="MeshInstance3D" parent="Orbital Lines" unique_id=567813189]
+material_override = SubResource("StandardMaterial3D_6gr3f")
+mesh = SubResource("ImmediateMesh_6seew")
+
+[node name="@MeshInstance3D@189293" type="MeshInstance3D" parent="Orbital Lines" unique_id=2001074780]
+material_override = SubResource("StandardMaterial3D_3ox4t")
+mesh = SubResource("ImmediateMesh_4fmho")
+
+[node name="@MeshInstance3D@189294" type="MeshInstance3D" parent="Orbital Lines" unique_id=1326299730]
+material_override = SubResource("StandardMaterial3D_aivy6")
+mesh = SubResource("ImmediateMesh_bil4k")
+
+[node name="@MeshInstance3D@189295" type="MeshInstance3D" parent="Orbital Lines" unique_id=1721733401]
+material_override = SubResource("StandardMaterial3D_hnquj")
+mesh = SubResource("ImmediateMesh_0h8y2")
+
+[node name="@MeshInstance3D@189296" type="MeshInstance3D" parent="Orbital Lines" unique_id=88371523]
+material_override = SubResource("StandardMaterial3D_nycv6")
+mesh = SubResource("ImmediateMesh_x4ftd")
+
+[node name="@MeshInstance3D@189297" type="MeshInstance3D" parent="Orbital Lines" unique_id=822738040]
+material_override = SubResource("StandardMaterial3D_arf1h")
+mesh = SubResource("ImmediateMesh_s0om5")
+
+[node name="@MeshInstance3D@189298" type="MeshInstance3D" parent="Orbital Lines" unique_id=1618006361]
+material_override = SubResource("StandardMaterial3D_gkfde")
+mesh = SubResource("ImmediateMesh_4qxq8")
+
+[node name="@MeshInstance3D@189299" type="MeshInstance3D" parent="Orbital Lines" unique_id=1804112760]
+material_override = SubResource("StandardMaterial3D_ryg4g")
+mesh = SubResource("ImmediateMesh_oy6td")
+
+[node name="@MeshInstance3D@189300" type="MeshInstance3D" parent="Orbital Lines" unique_id=342876140]
+material_override = SubResource("StandardMaterial3D_fe76k")
+mesh = SubResource("ImmediateMesh_p5pln")
+
+[node name="@MeshInstance3D@189301" type="MeshInstance3D" parent="Orbital Lines" unique_id=143884365]
+material_override = SubResource("StandardMaterial3D_oiuw5")
+mesh = SubResource("ImmediateMesh_mldrc")
+
+[node name="@MeshInstance3D@198966" type="MeshInstance3D" parent="Orbital Lines" unique_id=376878305]
+material_override = SubResource("StandardMaterial3D_ekl5k")
+mesh = SubResource("ImmediateMesh_fdpg8")
+
+[node name="@MeshInstance3D@198967" type="MeshInstance3D" parent="Orbital Lines" unique_id=1616043192]
+material_override = SubResource("StandardMaterial3D_rpys8")
+mesh = SubResource("ImmediateMesh_6gr3f")
+
+[node name="@MeshInstance3D@198968" type="MeshInstance3D" parent="Orbital Lines" unique_id=591695081]
+material_override = SubResource("StandardMaterial3D_6seew")
+mesh = SubResource("ImmediateMesh_3ox4t")
+
+[node name="@MeshInstance3D@198969" type="MeshInstance3D" parent="Orbital Lines" unique_id=32936138]
+material_override = SubResource("StandardMaterial3D_4fmho")
+mesh = SubResource("ImmediateMesh_aivy6")
+
+[node name="@MeshInstance3D@198970" type="MeshInstance3D" parent="Orbital Lines" unique_id=1489246898]
+material_override = SubResource("StandardMaterial3D_bil4k")
+mesh = SubResource("ImmediateMesh_hnquj")
+
+[node name="@MeshInstance3D@198971" type="MeshInstance3D" parent="Orbital Lines" unique_id=982940441]
+material_override = SubResource("StandardMaterial3D_0h8y2")
+mesh = SubResource("ImmediateMesh_nycv6")
+
+[node name="@MeshInstance3D@198972" type="MeshInstance3D" parent="Orbital Lines" unique_id=1819787993]
+material_override = SubResource("StandardMaterial3D_x4ftd")
+mesh = SubResource("ImmediateMesh_arf1h")
+
+[node name="@MeshInstance3D@198973" type="MeshInstance3D" parent="Orbital Lines" unique_id=1520804461]
+material_override = SubResource("StandardMaterial3D_s0om5")
+mesh = SubResource("ImmediateMesh_gkfde")
+
+[node name="@MeshInstance3D@198974" type="MeshInstance3D" parent="Orbital Lines" unique_id=1162356320]
+material_override = SubResource("StandardMaterial3D_4qxq8")
+mesh = SubResource("ImmediateMesh_ryg4g")
+
+[node name="@MeshInstance3D@198975" type="MeshInstance3D" parent="Orbital Lines" unique_id=602428882]
+material_override = SubResource("StandardMaterial3D_oy6td")
+mesh = SubResource("ImmediateMesh_fe76k")
+
+[node name="@MeshInstance3D@198976" type="MeshInstance3D" parent="Orbital Lines" unique_id=1576131985]
+material_override = SubResource("StandardMaterial3D_p5pln")
+mesh = SubResource("ImmediateMesh_oiuw5")
+
+[node name="@MeshInstance3D@198977" type="MeshInstance3D" parent="Orbital Lines" unique_id=490637248]
+material_override = SubResource("StandardMaterial3D_mldrc")
+mesh = SubResource("ImmediateMesh_1tiwm")
+
+[node name="@MeshInstance3D@198978" type="MeshInstance3D" parent="Orbital Lines" unique_id=50369709]
+material_override = SubResource("StandardMaterial3D_xxpw2")
+mesh = SubResource("ImmediateMesh_wghq8")
+
+[node name="@MeshInstance3D@198979" type="MeshInstance3D" parent="Orbital Lines" unique_id=919030127]
+material_override = SubResource("StandardMaterial3D_k08w7")
+mesh = SubResource("ImmediateMesh_hp4ct")
+
+[node name="@MeshInstance3D@198980" type="MeshInstance3D" parent="Orbital Lines" unique_id=579277765]
+material_override = SubResource("StandardMaterial3D_suf1q")
+mesh = SubResource("ImmediateMesh_lxb2r")
+
+[node name="@MeshInstance3D@198981" type="MeshInstance3D" parent="Orbital Lines" unique_id=209033642]
+material_override = SubResource("StandardMaterial3D_ceu5l")
+mesh = SubResource("ImmediateMesh_lv1ug")
+
+[node name="@MeshInstance3D@198982" type="MeshInstance3D" parent="Orbital Lines" unique_id=1739819017]
+material_override = SubResource("StandardMaterial3D_mofpq")
+mesh = SubResource("ImmediateMesh_6kttw")
+
+[node name="@MeshInstance3D@198983" type="MeshInstance3D" parent="Orbital Lines" unique_id=963773669]
+material_override = SubResource("StandardMaterial3D_oqmj5")
+mesh = SubResource("ImmediateMesh_uor2d")
+
+[node name="@MeshInstance3D@198984" type="MeshInstance3D" parent="Orbital Lines" unique_id=248097163]
+material_override = SubResource("StandardMaterial3D_bdw5g")
+mesh = SubResource("ImmediateMesh_j6smb")
+
+[node name="@MeshInstance3D@198985" type="MeshInstance3D" parent="Orbital Lines" unique_id=1772916404]
+material_override = SubResource("StandardMaterial3D_xp7cv")
+mesh = SubResource("ImmediateMesh_6ff2c")
+
+[node name="@MeshInstance3D@198986" type="MeshInstance3D" parent="Orbital Lines" unique_id=1717326183]
+material_override = SubResource("StandardMaterial3D_ly5pk")
+mesh = SubResource("ImmediateMesh_s0u5n")
+
+[node name="@MeshInstance3D@198987" type="MeshInstance3D" parent="Orbital Lines" unique_id=1883762318]
+material_override = SubResource("StandardMaterial3D_8lrju")
+mesh = SubResource("ImmediateMesh_5kegx")
+
+[node name="@MeshInstance3D@198988" type="MeshInstance3D" parent="Orbital Lines" unique_id=1766457990]
+material_override = SubResource("StandardMaterial3D_afgqn")
+mesh = SubResource("ImmediateMesh_jvn2n")
+
+[node name="@MeshInstance3D@198989" type="MeshInstance3D" parent="Orbital Lines" unique_id=553983681]
+material_override = SubResource("StandardMaterial3D_jegnu")
+mesh = SubResource("ImmediateMesh_rx6mv")
+
+[node name="@MeshInstance3D@198990" type="MeshInstance3D" parent="Orbital Lines" unique_id=530555678]
+material_override = SubResource("StandardMaterial3D_31js7")
+mesh = SubResource("ImmediateMesh_0a4i0")
+
+[node name="@MeshInstance3D@198991" type="MeshInstance3D" parent="Orbital Lines" unique_id=942809294]
+material_override = SubResource("StandardMaterial3D_i0xsp")
+mesh = SubResource("ImmediateMesh_kll2q")
+
+[node name="@MeshInstance3D@198992" type="MeshInstance3D" parent="Orbital Lines" unique_id=33356826]
+material_override = SubResource("StandardMaterial3D_ft875")
+mesh = SubResource("ImmediateMesh_6hmxt")
+
 [node name="Player" type="MeshInstance3D" parent="." unique_id=424688616]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 149598, 1000.9409, 0)
 mesh = SubResource("CapsuleMesh_ig7tw")
+script = ExtResource("3_lquwl")
+move_speed = 1000.0
 
 [node name="Sun" type="MeshInstance3D" parent="." unique_id=1914324139]
 mesh = SubResource("SphereMesh_0xm2m")
@@ -417,7 +2051,7 @@ script = ExtResource("2_lquwl")
 center_body = NodePath("../Sun")
 radius = 57909
 orbit_length_in_seconds = 144.48
-orbit_tilt = 90.0
+orbit_tilt = 7.0
 
 [node name="Venus" type="MeshInstance3D" parent="." unique_id=1689562870 node_paths=PackedStringArray("center_body")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 108209.48, 0, 0)
@@ -426,6 +2060,7 @@ script = ExtResource("2_lquwl")
 center_body = NodePath("../Sun")
 radius = 108209
 orbit_length_in_seconds = 369.0
+orbit_tilt = -3.4
 
 [node name="Earth" type="MeshInstance3D" parent="." unique_id=1225540661 node_paths=PackedStringArray("center_body")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 149598.02, 0, 0)
@@ -443,6 +2078,7 @@ script = ExtResource("2_lquwl")
 center_body = NodePath("../Earth")
 radius = 10610
 orbit_length_in_seconds = 60.0
+orbit_tilt = 28.6
 
 [node name="Mars" type="MeshInstance3D" parent="." unique_id=851106793 node_paths=PackedStringArray("center_body")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 227943.83, 0, 0)
@@ -451,6 +2087,7 @@ script = ExtResource("2_lquwl")
 center_body = NodePath("../Sun")
 radius = 227944
 orbit_length_in_seconds = 1128.0
+orbit_tilt = -1.5
 
 [node name="Phobos" type="MeshInstance3D" parent="." unique_id=1778452569 node_paths=PackedStringArray("center_body")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 227943.83, 0, 557.5)
@@ -459,6 +2096,7 @@ script = ExtResource("2_lquwl")
 center_body = NodePath("../Mars")
 radius = 558
 orbit_length_in_seconds = 60.0
+orbit_tilt = 10.0
 
 [node name="Deimos" type="MeshInstance3D" parent="." unique_id=658296974 node_paths=PackedStringArray("center_body")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 227943.83, 0, 1119)
@@ -467,6 +2105,7 @@ script = ExtResource("2_lquwl")
 center_body = NodePath("../Mars")
 radius = 1119
 orbit_length_in_seconds = 120.0
+orbit_tilt = -10.0
 
 [node name="Jupiter" type="MeshInstance3D" parent="." unique_id=98832185 node_paths=PackedStringArray("center_body")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 778340.8, 0, 0)
@@ -626,3 +2265,6 @@ script = ExtResource("2_lquwl")
 center_body = NodePath("../Sun")
 radius = 5906377
 orbit_length_in_seconds = 148000.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=70098657]
+environment = SubResource("Environment_5vw27")
