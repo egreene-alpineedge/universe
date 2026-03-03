@@ -1,0 +1,141 @@
+[gd_scene format=3 uid="uid://c78husreuhytm"]
+
+[ext_resource type="Script" uid="uid://cio4oprbl7i5n" path="res://main.gd" id="1_jltjy"]
+[ext_resource type="Script" uid="uid://fx0nntqbvt3k" path="res://player.gd" id="2_t0rjb"]
+[ext_resource type="Texture2D" uid="uid://dncrpmwrw6bfc" path="res://qwantani_moon_noon_puresky_4k.exr" id="4_jltjy"]
+[ext_resource type="Script" uid="uid://bda73liu2akeu" path="res://celestial_body.gd" id="4_vonsu"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_0qvlo"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_t0rjb"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_0qvlo"]
+radius = 1000.0
+height = 2000.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_t0rjb"]
+radius = 1000.0
+
+[sub_resource type="PanoramaSkyMaterial" id="PanoramaSkyMaterial_4hlcf"]
+panorama = ExtResource("4_jltjy")
+
+[sub_resource type="Sky" id="Sky_272bh"]
+sky_material = SubResource("PanoramaSkyMaterial_4hlcf")
+
+[sub_resource type="Environment" id="Environment_0rt7u"]
+background_mode = 1
+sky = SubResource("Sky_272bh")
+
+[node name="RealGravity" type="Node3D" unique_id=1507916261]
+script = ExtResource("1_jltjy")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1190307229]
+transform = Transform3D(-4.371139e-08, -1, -4.371139e-08, 0, -4.371139e-08, 1, -1, 4.371139e-08, 1.9106855e-15, 0, 326627.47, 3653.2927)
+far = 800000.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=2081897872]
+
+[node name="Player" type="CharacterBody3D" parent="." unique_id=1337660559]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 172.59253, 1249.9827)
+script = ExtResource("2_t0rjb")
+camera_offset = Vector3(0, 1, 5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player" unique_id=2130739683]
+mesh = SubResource("CapsuleMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player" unique_id=299829363]
+shape = SubResource("CapsuleShape3D_t0rjb")
+
+[node name="Sun" type="AnimatableBody3D" parent="." unique_id=1964601318 groups=["bodies"]]
+script = ExtResource("4_vonsu")
+mass = 10000.0
+
+[node name="Earth" type="AnimatableBody3D" parent="Sun" unique_id=1823090477 groups=["EarthSystem", "bodies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -10000, -129256.11)
+
+[node name="Moon" type="AnimatableBody3D" parent="Sun/Earth" unique_id=94855699 groups=["EarthSystem"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10610, 5000, 251.759)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Earth/Moon" unique_id=171204745]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Earth/Moon" unique_id=626215894]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Earth" unique_id=1844687577]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Earth" unique_id=1419780706]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="Mars" type="AnimatableBody3D" parent="Sun" unique_id=1964874264 groups=["MarsSystem", "bodies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 20000, 227943.83)
+
+[node name="Phobos" type="AnimatableBody3D" parent="Sun/Mars" unique_id=250944227 groups=["MarsSystem"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 716.105, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Mars/Phobos" unique_id=1426219856]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Mars/Phobos" unique_id=525281576]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="Deimos" type="AnimatableBody3D" parent="Sun/Mars" unique_id=906433269 groups=["MarsSystem"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1119, 0, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Mars/Deimos" unique_id=1982150275]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Mars/Deimos" unique_id=1021979017]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Mars" unique_id=1149164588]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Mars" unique_id=1781847874]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="Jupiter" type="AnimatableBody3D" parent="Sun" unique_id=880997719 groups=["EarthSystem", "bodies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 459303.9, 2.718, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Jupiter" unique_id=249844794]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Jupiter" unique_id=1309750494]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="Comet" type="AnimatableBody3D" parent="Sun" unique_id=1227571231 groups=["MarsSystem", "bodies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -764.064, 60000, 194347.14)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Comet" unique_id=1622380469]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Comet" unique_id=127494818]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="Fire Twin" type="AnimatableBody3D" parent="Sun" unique_id=979719611 groups=["MarsSystem", "bodies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1528.1284, 5.4355083, -35247.242)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Fire Twin" unique_id=420243194]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Fire Twin" unique_id=830099680]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="Sand Twin" type="AnimatableBody3D" parent="Sun" unique_id=1207999270 groups=["MarsSystem", "bodies"]]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -764.0642, 2.7177541, 34549.11)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun/Sand Twin" unique_id=1125702373]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun/Sand Twin" unique_id=1154573336]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Sun" unique_id=1958427023]
+mesh = SubResource("SphereMesh_0qvlo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Sun" unique_id=617709173]
+shape = SubResource("SphereShape3D_t0rjb")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1790313392]
+environment = SubResource("Environment_0rt7u")
