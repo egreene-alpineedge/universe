@@ -14,12 +14,14 @@ extends AnimatableBody3D
 var _orbit_lines: Dictionary = {}
 
 
-func _process(delta: float) -> void:
-	if Engine.is_editor_hint():
-		if show_child_orbits:
-			_draw_children_orbits()
-		return
+func _process(_delta: float) -> void:
+	if Engine.is_editor_hint() and show_child_orbits:
+		_draw_children_orbits()
 
+
+func _physics_process(delta: float) -> void:
+	if Engine.is_editor_hint():
+		return
 	_apply_gravity_to_children(delta)
 	position += velocity * delta
 
