@@ -19,6 +19,7 @@ extends CharacterBody3D
 @export var mass: float = 1
 @export var acceleration: float = 500.0
 @export var damping: float = 0.0  # 0 = no drag (space), 0.99 = heavy drag
+@export var origin_shift_threshold: float = 10000.0
 var player_velocity: Vector3 = Vector3.ZERO
 
 ## Accumulated pitch so we can clamp it independently of yaw.
@@ -73,7 +74,20 @@ func _unhandled_input(event: InputEvent) -> void:
 		rotation.x = _pitch
 
 
+func _shift_origin() -> void:
+	if global_position.length_squared() < origin_shift_threshold * origin_shift_threshold:
+		return
+	var offset := global_position
+	for node in get_tree().root.get_children():
+		if node == self:
+			continue
+		if node is Node3D:
+			node.global_position -= offset
+	global_position = Vector3.ZERO
+
+
 func _physics_process(delta: float) -> void:
+	_shift_origin()
 	# --- Accumulate thrust into player_velocity ---
 	var thrust := Vector3.ZERO
 
@@ -105,8 +119,8 @@ func _physics_process(delta: float) -> void:
 		else:
 			player_velocity = target
 
-	if gravity_enabled:
-		_apply_gravity(delta)
+	#if gravity_enabled:
+		#_apply_gravity(delta)
 
 	var motion := player_velocity * delta + _gravity_velocity * delta
 	var collision := move_and_collide(motion)
@@ -135,6 +149,7 @@ func _physics_process(delta: float) -> void:
 	if is_instance_valid(_camera):
 		_camera.global_position = global_position + global_transform.basis * camera_offset
 		_camera.global_rotation = global_rotation
+
 
 func _try_select_body() -> void:
 	if not is_instance_valid(_camera):
